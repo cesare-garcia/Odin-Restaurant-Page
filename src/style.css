@@ -1,4 +1,36 @@
-div {
+body {
+    margin: 0;
+}
+
+.topDiv {
+    background-color: blue;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.topTab {
+    height: 50px;
+    width: 50px;
     background-color: black;
-    color: white;
+}
+
+.bodyDiv {
+    background-color: green;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middleDiv {
+    background-color: red;
+    height: 100px;
+    width: 50%;
+}
+
+.bottomDiv {
+    background-color: orange;
+    height: 100px;
 }

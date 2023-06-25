@@ -1,14 +1,23 @@
 import './style.css';
+import loadPage from './loadpage.js';
 import TheMartianDiningClub from './../img/theMartianDiningClub.png';
 
-console.log("hello test");
+const contentDiv = document.querySelector("#content");
 
-let content = document.querySelector("#content");
-let testDiv = document.createElement("div");
-testDiv.innerText = "hello";
-content.appendChild(testDiv);
+loadPage(contentDiv);
 
-let mdcPic = new Image();
-mdcPic.src = TheMartianDiningClub;
+const tab1 = document.querySelector("#tab1");
+const tab2 = document.querySelector("#tab2");
+const tab3 = document.querySelector("#tab3");
 
-content.appendChild(mdcPic);
+tab1.addEventListener("click", (e) => {
+    console.log("tab1")
+})
+
+tab2.addEventListener("click", (e) => {
+    console.log("tab2")
+})
+
+tab3.addEventListener("click", (e) => {
+    console.log("tab3")
+})
