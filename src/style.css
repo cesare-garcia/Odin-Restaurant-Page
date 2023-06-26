@@ -2,35 +2,91 @@ body {
     margin: 0;
 }
 
+p {
+    margin: 0;
+    height: 37.5px;
+    align-self: center;
+    text-align: center;
+    width: inherit;
+}
+
 .topDiv {
-    background-color: blue;
-    height: 100px;
+    background-color: rgba(134, 1, 1);
+    height: 75px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .topTab {
-    height: 50px;
-    width: 50px;
+    height: inherit;
+    width: 120px;
     background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 28px;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .bodyDiv {
-    background-color: green;
-    height: 400px;
+    background-image: url('./../img/GalacticMap.png');
+    height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.middleDiv {
-    background-color: red;
-    height: 100px;
+.infoDiv {
+    background-color: white;
+    height: inherit;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeTabDiv {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rnDiv {
+    text-align: center;
+}
+
+.homeIMG {
+    border: solid;
+    border-radius: 10px;
+    /* border-color: rgba(134, 1, 1); */
+    border-color: silver;
+    border-width: 7px;
+}
+
+.rcDiv {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rc {
+    margin: 0;
+}
+.hoursDiv {
+    height: 125px;
+}
+
+.homeImage {
+    height: 400px;
+    width: auto;
 }
 
 .bottomDiv {
-    background-color: orange;
-    height: 100px;
+    background-color: rgba(134, 1, 1);
+    height: 75px;
 }
