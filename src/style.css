@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Courier Prime', serif;
 }
 
 p {
@@ -8,6 +9,20 @@ p {
     align-self: center;
     text-align: center;
     width: inherit;
+}
+
+img {
+    border: solid;
+    border-radius: 10px;
+    border-color: silver;
+    border-width: 7px;
+}
+
+@font-face {
+    font-family: 'Courier Prime';
+    src: url('CourierPrime-Regular.ttf') format("truetype");
+    font-weight: 700;
+    font-style: normal;
 }
 
 .topDiv {
@@ -20,10 +35,9 @@ p {
 
 .topTab {
     height: inherit;
-    width: 120px;
+    width: 130px;
     background-color: black;
     color: white;
-    font-family: sans-serif;
     font-size: 28px;
     display: flex;
     border-top-left-radius: 10px;
@@ -32,19 +46,29 @@ p {
 
 .bodyDiv {
     background-image: url('./../img/GalacticMap.png');
-    height: 800px;
+    background-size: cover;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .infoDiv {
-    background-color: white;
-    height: inherit;
+    background-color: black;
+    color: blue;
+    height: 740px;
+    border-radius: 10px;
+    border: solid;
+    border-color: silver;
+    border-width: 7px;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
 }
 
 .homeTabDiv {
@@ -59,16 +83,8 @@ p {
     text-align: center;
 }
 
-.homeIMG {
-    border: solid;
-    border-radius: 10px;
-    /* border-color: rgba(134, 1, 1); */
-    border-color: silver;
-    border-width: 7px;
-}
-
 .rcDiv {
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,6 +92,7 @@ p {
 
 .rc {
     margin: 0;
+    height: 80px;
 }
 .hoursDiv {
     height: 125px;
@@ -84,6 +101,48 @@ p {
 .homeImage {
     height: 400px;
     width: auto;
+}
+
+.menuDiv {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mealdiv {
+    display: flex;
+    gap: 25px;
+    font-size: 12px;
+}
+
+.mealdiv > p {
+    height: inherit;
+    text-align: left;
+}
+
+.contactDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contactHeading {
+    text-align: center;
+    font-size: 44px;
+}
+
+.ownerDiv {
+    display: flex;   
+    justify-content: center;
+    gap: 30px;
+}
+
+.ownerbios {
+    text-align: left;
+    font-size: 20px;
 }
 
 .bottomDiv {
